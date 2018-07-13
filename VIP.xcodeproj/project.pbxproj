@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3999861520F81ECD001E6273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999861420F81ECD001E6273 /* AppDelegate.swift */; };
-		3999861720F81ECD001E6273 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999861620F81ECD001E6273 /* ViewController.swift */; };
 		3999861A20F81ECD001E6273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3999861820F81ECD001E6273 /* Main.storyboard */; };
 		3999861D20F81ECD001E6273 /* VIP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3999861B20F81ECD001E6273 /* VIP.xcdatamodeld */; };
 		3999861F20F81ED0001E6273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3999861E20F81ED0001E6273 /* Assets.xcassets */; };
 		3999862220F81ED0001E6273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3999862020F81ED0001E6273 /* LaunchScreen.storyboard */; };
 		3999862D20F81ED0001E6273 /* VIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999862C20F81ED0001E6273 /* VIPTests.swift */; };
 		3999863820F81ED0001E6273 /* VIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999863720F81ED0001E6273 /* VIPUITests.swift */; };
+		3999864620F81F50001E6273 /* VIPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999864520F81F50001E6273 /* VIPTableViewController.swift */; };
+		3999864820F82229001E6273 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999864720F82229001E6273 /* DrawViewController.swift */; };
+		3999864A20F82285001E6273 /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999864920F82285001E6273 /* TeamDetailViewController.swift */; };
+		3999864C20F822E6001E6273 /* APIRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999864B20F822E6001E6273 /* APIRequestModel.swift */; };
+		3999864E20F82A5E001E6273 /* TwiiterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999864D20F82A5E001E6273 /* TwiiterTableViewController.swift */; };
+		3999865020F837C9001E6273 /* CustomStandingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999864F20F837C9001E6273 /* CustomStandingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,6 @@
 /* Begin PBXFileReference section */
 		3999861120F81ECD001E6273 /* VIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3999861420F81ECD001E6273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3999861620F81ECD001E6273 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3999861920F81ECD001E6273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3999861C20F81ECD001E6273 /* VIP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VIP.xcdatamodel; sourceTree = "<group>"; };
 		3999861E20F81ED0001E6273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		3999863320F81ED0001E6273 /* VIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3999863720F81ED0001E6273 /* VIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPUITests.swift; sourceTree = "<group>"; };
 		3999863920F81ED0001E6273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3999864520F81F50001E6273 /* VIPTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPTableViewController.swift; sourceTree = "<group>"; };
+		3999864720F82229001E6273 /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		3999864920F82285001E6273 /* TeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
+		3999864B20F822E6001E6273 /* APIRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestModel.swift; sourceTree = "<group>"; };
+		3999864D20F82A5E001E6273 /* TwiiterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwiiterTableViewController.swift; sourceTree = "<group>"; };
+		3999864F20F837C9001E6273 /* CustomStandingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStandingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +109,14 @@
 		3999861320F81ECD001E6273 /* VIP */ = {
 			isa = PBXGroup;
 			children = (
+				3999864520F81F50001E6273 /* VIPTableViewController.swift */,
 				3999861420F81ECD001E6273 /* AppDelegate.swift */,
-				3999861620F81ECD001E6273 /* ViewController.swift */,
 				3999861820F81ECD001E6273 /* Main.storyboard */,
+				3999864F20F837C9001E6273 /* CustomStandingTableViewCell.swift */,
+				3999864D20F82A5E001E6273 /* TwiiterTableViewController.swift */,
+				3999864720F82229001E6273 /* DrawViewController.swift */,
+				3999864B20F822E6001E6273 /* APIRequestModel.swift */,
+				3999864920F82285001E6273 /* TeamDetailViewController.swift */,
 				3999861E20F81ED0001E6273 /* Assets.xcassets */,
 				3999862020F81ED0001E6273 /* LaunchScreen.storyboard */,
 				3999862320F81ED0001E6273 /* Info.plist */,
@@ -259,9 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3999861720F81ECD001E6273 /* ViewController.swift in Sources */,
+				3999864C20F822E6001E6273 /* APIRequestModel.swift in Sources */,
+				3999864A20F82285001E6273 /* TeamDetailViewController.swift in Sources */,
+				3999864820F82229001E6273 /* DrawViewController.swift in Sources */,
 				3999861D20F81ECD001E6273 /* VIP.xcdatamodeld in Sources */,
+				3999864620F81F50001E6273 /* VIPTableViewController.swift in Sources */,
 				3999861520F81ECD001E6273 /* AppDelegate.swift in Sources */,
+				3999865020F837C9001E6273 /* CustomStandingTableViewCell.swift in Sources */,
+				3999864E20F82A5E001E6273 /* TwiiterTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

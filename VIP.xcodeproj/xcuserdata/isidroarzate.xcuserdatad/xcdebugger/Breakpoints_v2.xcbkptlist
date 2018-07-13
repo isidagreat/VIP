@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VIP/APIRequestModel.swift"
+            timestampString = "553138802.759729"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "APIRequestModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VIP.APIRequestModel.deinit"
+                  moduleName = "VIP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/isidroarzate/Desktop/DojoAssignments/iOS/VIP/VIP/APIRequestModel.swift"
+                  timestampString = "553136336.00401"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VIP.APIRequestModel.__deallocating_deinit"
+                  moduleName = "VIP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/isidroarzate/Desktop/DojoAssignments/iOS/VIP/VIP/APIRequestModel.swift"
+                  timestampString = "553136336.011812"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VIP.APIRequestModel.__allocating_init() -&gt; VIP.APIRequestModel"
+                  moduleName = "VIP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/isidroarzate/Desktop/DojoAssignments/iOS/VIP/VIP/APIRequestModel.swift"
+                  timestampString = "553136336.0138969"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VIP.APIRequestModel.init() -&gt; VIP.APIRequestModel"
+                  moduleName = "VIP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/isidroarzate/Desktop/DojoAssignments/iOS/VIP/VIP/APIRequestModel.swift"
+                  timestampString = "553136336.015957"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
