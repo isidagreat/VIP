@@ -13,6 +13,7 @@ class CustomStandingTableViewCell: UITableViewCell {
     @IBOutlet weak var lossesLabel: UILabel!
     @IBOutlet weak var winsLabel: UILabel!
     @IBOutlet weak var countryCodeLabel: UILabel!
+    var teamDict: NSDictionary?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

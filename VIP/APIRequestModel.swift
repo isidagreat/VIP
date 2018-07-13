@@ -18,4 +18,13 @@ class APIRequestModel{
         let task = session.dataTask(with: url!, completionHandler: completionHandler)
         task.resume()
     }
+    static func getMatchData(completionHandler: @escaping(_ data: Data?, _ response: URLResponse?, _ error: Error?) -> Void) {
+        //        set the URL from where we are grabbing the tasks
+        let url = URL(string: "https://worldcup.sfg.io/matches/?by_date=desc")
+        //        instatiate a web session
+        let session = URLSession.shared
+        //        make the request
+        let task = session.dataTask(with: url!, completionHandler: completionHandler)
+        task.resume()
+    }
 }

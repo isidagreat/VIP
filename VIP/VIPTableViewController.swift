@@ -8,8 +8,7 @@
 
 import UIKit
 
-class VIPTableViewController: UITableViewController {
-    
+class VIPTableViewController: UITableViewController, TeamDetailViewControllerDelegate {
 var items = [NSDictionary]()
     override func viewDidLoad() {
         APIRequestModel.getStandings() {
@@ -17,12 +16,9 @@ var items = [NSDictionary]()
             do {
                 // try and grab the tasks from ApI and print/use in success
                 if let standings = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSArray {
-                    if (standings as? NSArray) != nil{
                         for stand in standings{
                             let standDict = stand as! NSDictionary
-                            print(standDict)
                             self.items.append(standDict)
-                        }
                     }
                 }
                 DispatchQueue.main.async {
@@ -40,6 +36,26 @@ var items = [NSDictionary]()
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Selected")
+        performSegue(withIdentifier: "TeamDetailSegue", sender: indexPath)
+        print(indexPath)
+    }
+    func addTeam(by controller: TeamDetailViewController, with team: NSDictionary) {
+//        PlaceHolder to conform to delegate
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+            if segue.identifier == "TeamDetailSegue"{
+            let navigationController = segue.destination as! UINavigationController
+            let teamDetailViewController = navigationController.topViewController as! TeamDetailViewController
+            let path = self.tableView.indexPathForSelectedRow
+                print(path as Any)
+            teamDetailViewController.delegate = self
+            teamDetailViewController.teamDict = items[(path?.row)!]
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,6 +76,7 @@ var items = [NSDictionary]()
         cell.countryCodeLabel.text = items[indexPath.row]["fifa_code"] as? String
         cell.winsLabel.text = "Wins: " + "\(items[indexPath.row]["wins"] ?? "n/a")"
         cell.lossesLabel.text = "Losses: " + "\(items[indexPath.row]["losses"] ?? "n/a")"
+        cell.teamDict = items[indexPath.row]
 
         // Configure the cell...
 
